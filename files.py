@@ -1,41 +1,17 @@
-# ----------read-----------
-'''
-f=open("example",'r')
+#f=open('abc2.txt','w')
+#f=open('abc2.txt','a')
+#f.write('hello\n')
+#f.write('hi\n')
+#f.write('good\n')
+
+f=open('abc2.txt','r')
 #print(f.read())
-print(f.readline(),end="")
-#print(f.readline()) # prints one line only
-#print(f.readlines(),end="") #prints whole string in list
-#print(f.readline(4)) # returns 4 characters only
+
+print(f.readline())
+print(f.readline())
+print(f.tell())
+
+'''f=open('abc2.txt','w')
+list = ['hyd\n','viz\n','bza\n','gunt\n','praka\n']
+f.writelines(list)
 '''
-'''
-# --------write-------------
-f=open('example2','w')
-f.write('something')
-f.write('good morning')
-
-# --------append---------
-f=open('example','a')
-f.write('laptop')
-
-
-f=open('example','r')
-f1=open('example2','w')
-for i in f:
-    f1.write(i)
-'''
-
-#-------delete------------  
-import os
-if os.path.exists('hello'):
-    os.remove('hello')
-    print("file removed")
-else:
-    print("file does not exist")
-
-
-
-
-
-
-
-
